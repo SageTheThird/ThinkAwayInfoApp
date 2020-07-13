@@ -247,13 +247,7 @@ public class  AuthActivity extends DaggerAppCompatActivity {
 
                                     userInfomap.put(getString(R.string.uid), FirebaseAuth.getInstance().getCurrentUser().getUid());
 
-                                    if(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber() != null){
-
-                                        userInfomap.put(getString(R.string.phone_number), FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber());
-
-                                    }
-
-
+                                  
 
 
                                     //Convert User info into string using gson
