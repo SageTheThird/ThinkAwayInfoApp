@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:id="@+id/bottom_sheet_relativeLayoutW"
+    android:padding="15dp"
+    android:backgroundTint="@color/white"
+    android:background="@color/transparentBlack"
+    >
+
+    <include
+        layout="@layout/shimmer_words_meanings_layout"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="navigate"
+        android:textSize="26sp"
+        android:fontFamily="@font/trebuc"
+        android:textStyle="bold"
+        android:layout_gravity="start"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/word"
+        android:textColor="@color/SubtleBlack"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Part oF Speech : verb"
+        android:id="@+id/pos_tv1"
+        android:textSize="13sp"
+        android:visibility="gone"
+        android:fontFamily="@font/trebuc"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/def1"
+        android:textSize="16sp"
+        android:textColor="@color/SubtleBlack"
+        android:visibility="gone"
+        android:fontFamily="@font/trebuc"
+
+        android:text="travel on water propelled by wind or by other means"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Part oF Speech : verb"
+        android:id="@+id/pos_tv2"
+        android:textSize="13sp"
+        android:visibility="gone"
+        android:fontFamily="@font/trebuc"
+
+        android:layout_marginTop="20dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/def2"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:fontFamily="@font/trebuc"
+
+        android:textColor="@color/SubtleBlack"
+        android:text="travel on water propelled by wind or by other means"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Part oF Speech : verb"
+        android:id="@+id/pos_tv3"
+        android:textSize="13sp"
+        android:visibility="gone"
+        android:fontFamily="@font/trebuc"
+
+        android:layout_marginTop="20dp"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/def3"
+        android:textSize="16sp"
+        android:textColor="@color/SubtleBlack"
+        android:fontFamily="@font/trebuc"
+        android:visibility="gone"
+
+        android:text="travel on water propelled by wind or by other means"
+        />
+
+</LinearLayout>

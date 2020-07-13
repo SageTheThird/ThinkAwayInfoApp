@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/photo_rel_left"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/info_expandable_layout_left"
+        >
+
+        <!--Bottom Left Side Menu-->
+
+
+        <xyz.schwaab.avvylib.AvatarView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:id="@+id/profile_pic_iV"
+            app:avvy_border_color="#00BCD4"
+            app:avvy_border_highlight_color="#FFEB3B"
+            app:avvy_border_highlight_color_end="#009688"
+            app:avvy_border_thickness="2dp"
+            app:avvy_border_thickness_highlight="2dp"
+            app:avvy_distance_to_border="3dp"
+            app:avvy_highlighted="true"
+            app:avvy_loading_arches="5"
+            app:avvy_loading_arches_degree_area="90"
+            android:layout_centerInParent="true"
+
+
+
+            />
+    </RelativeLayout>
+
+
+
+
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/info_expandable_layout_left"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:el_duration="500"
+        app:el_expanded="false"
+        app:layout_constraintTop_toBottomOf="@id/photo_rel_left"
+        android:background="@drawable/bottom_corners_rounded_button"
+        app:el_parallax="0.5"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Jannis Lucas"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:fontFamily="@font/allerta"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/bio_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Creating remarkable content x Instagram @jannis.luc"
+                android:textSize="13sp"
+                android:fontFamily="@font/allerta"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/username_tv"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/total_photos_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Photos : 120"
+                android:layout_marginTop="9dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_below="@id/bio_tv"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/allerta"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/total_collections_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Collections : 120"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_below="@id/total_photos_tv"
+                android:fontFamily="@font/allerta"
+                android:textColor="@color/black" />
+
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        layout="@layout/photo_fullscreen_socials_buttons_layout"
+        android:layout_below="@id/total_collections_tv"
+        />
+
+        </RelativeLayout>
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

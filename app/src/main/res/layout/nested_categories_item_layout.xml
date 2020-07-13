@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="210dp"
+    android:layout_height="320dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    android:id="@+id/categories_item_iv_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/psych_categories_item_iv"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop" />
+
+
+            <ImageView
+                android:id="@+id/psych_categories_item_iv2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:layout_below="@id/psych_categories_item_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-36dp"
+                />
+
+
+            <TextView
+                android:id="@+id/psych_categories_item_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Critical Thinking"
+                android:textColor="@color/SubtleBlack"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_below="@id/psych_categories_item_iv2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/dummy_content"
+                android:gravity="center"
+                android:id="@+id/category_description_nested"
+                android:layout_below="@id/psych_categories_item_tv"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="27dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/openBtn"
+                android:background="@drawable/category_open_button"
+                android:src="@drawable/ic_catopen"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:key="notifications"
+        app:title="Notifications"
+        >
+
+
+        <SwitchPreferenceCompat
+            app:key="message_notification"
+            app:title="Enable news letters notifications"
+            android:enabled="false"
+            app:summary="You will be subscribed to daily fresh random quotes, facts, one liners and alot more"
+            />
+
+        <SwitchPreferenceCompat
+            app:key="products_notification"
+            android:defaultValue="true"
+            app:title="Enable products notifications"
+            app:summary="This will enable notifications about our new products"
+            />
+
+        <SwitchPreferenceCompat
+            app:key="content_notification"
+            app:title="Enable content updates notifications"
+            app:summary="You will be notified when contents of the app are updated"
+            />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        app:key="account"
+        app:title="Account">
+
+        <Preference
+            app:key="change_info"
+            app:summary=""
+            app:title="Change Info"/>
+
+        <Preference
+            app:key="sign_out"
+            app:summary="You will be logged out of this account"
+            app:title="Log Out"/>
+
+    </PreferenceCategory>
+
+
+
+
+
+    <Preference
+        app:key="subscribe"
+        app:title="Subscribe"
+        app:summary="Subscribe and unlock hundreds of new posts, topics and full-length fresh crash courses"/>
+
+    <Preference
+        app:key="unsub"
+        app:title="Cancel Subscription"
+        app:summary=""/>
+    <Preference
+        app:key="feedback"
+        app:title="Send feedback"
+        app:summary="Report technical issues or suggest new features"/>
+</PreferenceScreen>

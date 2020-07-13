@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">ThinkAway</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!--drawer-->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!--AdsHelper-->
+    <string name="banner_ad_test_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_test_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+
+
+    <!--Shared Preferences -->
+    <string name="shared_favourites_list">favourites_list</string>
+    <string name="featured">Featured</string>
+    <string name="categories">Categories</string>
+    <string name="favourite">Favourites</string>
+    <string name="loginStatus">signedIn</string>
+
+    <string name="fullscreen_loading_animation">loading_cool_shapes.json</string>
+    <string name="user_info_map_pref">UserInfoMapPref</string>
+
+    <string name="admob_app_id">ca-app-pub-4969646247809586~5833246577</string>
+    <string name="psych_featured_rv_banner_id">ca-app-pub-4969646247809586/8020426211</string>
+    <string name="download_interstitial">ca-app-pub-4969646247809586/2669930561</string>
+    <string name="test_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="numbers_hint"><font size="20">Tap Here To Input Number</font></string>
+    <string name="years_hint"><font size="30">0 - 2019</font></string>
+
+
+    <!--NOTIFICATION-->
+    <string name="Activity_Notification">Activity</string>
+    <string name="Image_Notification">image</string>
+    <string name="Style_Notification">style</string>
+    <string name="Incoming_ForMainActivity">MainActivity</string>
+    <string name="Incoming_ForCrashCourses">CrashCourses</string>
+    <string name="Incoming_ForFactsPool">FactsPool</string>
+    <string name="Incoming_ForWallpapers">Wallpapers</string>
+    <string name="BigPicture_Style">BigPicture</string>
+    <string name="Inbox_Style">Inbox</string>
+    <string name="FreeVersion_NotificationSub">freeVersion</string>
+    <string name="channel_id">Channel_1</string>
+    <string name="default_notification_channel_id">channel-updates</string>
+    <string name="paidVersion_accountType">paidVersion</string>
+    <string name="resume_pg">resume</string>
+    <string name="total_pages">totalPages</string>
+    <string name="category_moreitems">category</string>
+    <string name="intro_screen_bool">introScreen</string>
+    <string name="username">Username</string>
+    <string name="profile_pic">ProfilePic</string>
+    <string name="email">Email</string>
+    <string name="uid">Uid</string>
+    <string name="phone_number">PhoneNumber</string>
+    <string name="finish_intro">FINISH</string>
+    <string name="crashCourseGeneralDescription">Nothing in life makes sense except in the light of evolution. Here </string>
+    <string name="dummy_content">Examples of fossilised behaviour include dietary information (wear traces on teeth and stable isotopes) and trace fossils indicating locomotor mode (footprints). The signature of a behavioural lead would be an observed shift in behaviour from one horizon (or species) to another, followed later by a morphological change relating to function. Fossil case studies that suggest a behavioural role in evolution include: feeding shifts in finely resolved sequences of vertebrates, ranging from freshwater fish to terrestrial ungulates locomotion changes crucial to major evolutionary transitions in the origin of tetrapods, birds and humans</string>
+    <string name="dummy_article_description">Nothing in life makes sense except in the light of evolution”. Evolution is the process that has shaped all life forms, whether it’s trees and flowers, sparrows or elephants</string>
+    <string name="isSubscribed">isSubscribed</string>
+    <string name="isOnTrial">isOnTrial</string>
+
+    <string name="subscribeBanner">Looks Like You Are Not Subscribed At All. You are missing out on 88% of our content and daily content updates. Come on board to unlock all the premium content and features of the app plus you dont get to miss the upcoming interesting slash pragmatic ideas, facts, concepts and crash courses. Best 130 cents expense of the month. Check!</string>
+
+
+    <string name="UnSubWarning">Please note that by hitting UnSub, your subscription to our content will be terminated and you will no longer be able to access all the content and features of the app. It is HIGHLY RECOMMENDED that you UnSubscribe from our services a few days before the subscription renewal, so that you can use the full extent of your subscription. Your feedback is always appreciated to help better our shortcomings.</string>
+    <string name="dictionaryNote">*long tap and copy difficult words to know its meaning/definitions.</string>
+    <string name="zoomInNote">Zoom in on image for better reading experience.</string>
+    <string name="FeedsHeading">FeedsHeading</string>
+    <string name="FeedsMessage">FeedsMessage</string>
+    <string name="categories_general_description">Some refined categories with reasonably sufficient content in their respective disciplines. Constant content updates to individual category everyday plus new elevating and enriching categories are added every 2 weeks.</string>
+    <string name="crashcourses_general_description">Some curiosity piquing topics and sub-topics that are worth reading about. I\'ve called them crash courses but they\'re more like detailed interesting facts or exercises for the brain, that makes you question the ideas we hold sacred or consider the truth.</string>
+    <string name="terms_note">By continuing you agree to these Terms and Conditions</string>
+    <string name="is_store_active">isStoreActive</string>
+    <string name="CategoriesHeading">CategoriesHeading</string>
+    <string name="CategoriesMessage">CategoriesMessage</string>
+    <string name="CrashCourseHeading">CrashCourseHeading</string>
+    <string name="CrashCourseMessage">CrashCourseMessage</string>
+    <string name="StoreUrl">StoreUrl</string>
+    <string name="StoreStatus">StoreStatus</string>
+    <string name="content_updates_note">Note : You are seeing only 12% of our content. Subscribe and unlock all the 100% content and features plus you will be automatically subscribed to our daily content updates.</string>
+
+    <string name="patreon_url">https://www.patreon.com/psychq</string>
+    <string name="userAlreadySubmittedReview">userAlreadySubmittedReview</string>
+    <string name="feedsNoteLocal">Learning, thinking and reflecting; made fun with; interesting ideas, concepts and theories shaped into simple points</string>
+    <!--    <string name="default_web_client_id" translatable="false">108483525516-6rr7nsdeqik6g4mpgttinnl9494h6rgk.apps.googleusercontent.com</string>-->
+
+
+
+    <!--Strings For New Intro page-->
+    <string name="titlePageOne">What is ThinkAway?</string>
+    <string name="titlePageTwo">Reshape Your Life</string>
+    <string name="titlePageThree">Fascinating Crash Courses</string>
+    <string name="pageOneText">ThinkAway is a fun info app that breaks down all the interesting ideas, theories, concepts, and facts into simple digestible points. Currently we have over 2000+ interesting items to go through. From one liner facts and quotes to the big questions about our existence, self-improvement and emotional intelligence, we cover it all.</string>
+<!--    <string name="pageOneText">Whether its a necessity of eliminating unwanted emotions from your life, or digging into the very meaning of this prepoterous life, embracing pessimism, or set out to achieve goals bigger than yourself, this app can provide reasonable guidance</string>-->
+    <string name="pageTwoText">Your thoughts can shape your feelings can shape your actions.  Thinking is powerful stuff whether you’re shaping your moment, or shaping your lifetime. Build the best possible version of your life by starting at Thinking and Reflecting. Soon you will realize that the more you stay inside your head, the more you take control of your life</string>
+<!--    <string name="pageThreeText">Self-Awareness, Channeling your emotions well, learning to motivate yourself, Recognizing emotions in others to create healthier relationships or infusing your emotions with values. If the mentioned skills are the things you want to achieve in your life, this app provides a plethora of information regarding mentioned topics</string>-->
+    <string name="pageThreeText">A famous saying that The mind is not a vessel to be filled, but a fire to be kindled. If you dont understand how your mind works, how an idea pops into your head, or how your best and worst memories are triggered or what makes humans so aggressive and what are the things that lead to your aggression, fear or your happiness. Then maybe you are the backseat passenger of your mind. And thats where our short and interesting Crash Courses comes in.</string>
+    <string name="server_error">LOOKS LIKE A PROBLEM OCCURRED WHILE LOADING DATA. TAP ON THE ICON TO RETRY</string>
+    <string name="WordsApiAccessKey">47f799da7amshad47aaa47be4696p1af21bjsn746d39417ee2</string>
+
+
+    <string name="Quotes">Quotes</string>
+    <string name="PsychologicalTricks">PsychologicalTricks</string>
+    <string name="PsychologicalDisorders">PsychologicalDisorders</string>
+    <string name="Psychology">Psychology</string>
+    <string name="Phobias">Phobias</string>
+    <string name="Philosophy">Philosophy</string>
+    <string name="Pessimism">Pessimism</string>
+    <string name="PersonalityTypes">PersonalityTypes</string>
+    <string name="MoviesFacts">MoviesFacts</string>
+    <string name="Movies">Movies</string>
+    <string name="Literature">Literature</string>
+    <string name="LifePointers">LifePointers</string>
+    <string name="InterestingWords">Interestingwords</string>
+    <string name="Idioms">Idioms</string>
+    <string name="HumanBehavior">HumanBehavior</string>
+    <string name="Grammar">Grammar</string>
+    <string name="Facts">Facts</string>
+    <string name="Emotions">Emotions</string>
+    <string name="CriticalThinking">CriticalThinking</string>
+    <string name="ColorPsychology">ColorPsychology</string>
+    <string name="BooksReferences">BooksReferences</string>
+    <string name="Default">Default</string>
+    <string name="quoteIndex">quoteIndex</string>
+
+
+
+
+    <!---Important Strings-->
+    <!--Server + Data Access-->
+
+
+</resources>

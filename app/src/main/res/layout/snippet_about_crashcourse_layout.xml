@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:elevation="6dp"
+    android:id="@+id/card_info"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear_about"
+        android:padding="20dp"
+        >
+
+        <include
+            layout="@layout/snippet_articles_header_iv_layout"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textSize="22sp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:gravity="start"
+            android:fontFamily="@font/trebuc"
+
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:id="@+id/about_ccOnClik"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="222dp"
+            android:text="@string/dummy_content"
+            android:textSize="16sp"
+            android:paddingStart="8dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="8dp"
+            android:id="@+id/courseDescription"
+            android:gravity="start"
+            android:paddingBottom="8dp"
+            android:fontFamily="@font/trebuc"
+
+            />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:text="See More"
+            android:textSize="9sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/four_side_rounded_button_articles_seemore"
+            android:id="@+id/seeMoreAboutBtn"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topics"
+            android:textSize="22sp"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:id="@+id/article"
+            android:fontFamily="@font/trebuc"
+
+            />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

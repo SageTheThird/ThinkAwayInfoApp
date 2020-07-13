@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/menu_home"
+            android:title="Home"
+            android:icon="@drawable/ic_home"
+            />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_facts_pool"
+            android:title="Facts Pool"
+            android:icon="@drawable/ic_home"
+
+            />
+<!--        <item-->
+<!--            android:id="@+id/more_categories"-->
+<!--            android:title="More Categories"-->
+<!--            android:icon="@drawable/ic_home"-->
+
+<!--            />-->
+
+        <item
+            android:id="@+id/menu_favourites"
+            android:title="Favourites"
+            android:icon="@drawable/ic_home"
+
+            />
+
+
+        <item
+            android:id="@+id/settings"
+            android:title="Settings"
+            android:icon="@drawable/ic_home"
+
+            />
+
+
+    </group>
+
+
+    <item android:title="communicate"
+        >
+        <menu>
+            <item
+                android:id="@+id/rate_menu"
+                android:title="Rate The App"
+                android:icon="@drawable/ic_home"
+
+
+                />
+
+
+            <item
+                android:id="@+id/menu_about"
+                android:title="About Us "
+                android:icon="@drawable/ic_home"
+
+                />
+
+            <item
+                android:id="@+id/menu_send"
+                android:title="Share With Friends"
+                android:icon="@drawable/ic_home"
+
+                />
+
+            <item
+                android:id="@+id/patreon_menu"
+                android:title="Become A Patron"
+                android:icon="@drawable/ic_home"
+
+
+                />
+
+
+        </menu>
+
+    </item>
+</menu>

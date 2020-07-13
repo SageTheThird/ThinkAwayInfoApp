@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/shimmer_view_container"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <View
+                android:id="@+id/viewtext"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:background="#dddddd"
+                android:layout_marginStart="23dp"
+                app:layout_constraintEnd_toStartOf="@+id/view2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:orientation="vertical"
+                >
+
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="155dp"
+                    android:layout_height="240dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shimmer_view_corners"
+                    app:layout_constraintEnd_toStartOf="@+id/view2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="155dp"
+                    android:layout_height="240dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shimmer_view_corners"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/view1"
+                    tools:layout_editor_absoluteY="0dp" />
+
+
+
+                <View
+                    android:id="@+id/tv1"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#dddddd"
+                    app:layout_constraintEnd_toStartOf="@+id/tv3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view1" />
+
+                <View
+                    android:id="@+id/tv2"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#dddddd"
+                    app:layout_constraintEnd_toStartOf="@+id/tv4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+                <View
+                    android:id="@+id/tv3"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#dddddd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/tv1"
+                    app:layout_constraintTop_toBottomOf="@id/view1" />
+
+
+                <View
+                    android:id="@+id/tv4"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#dddddd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/tv2"
+                    app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+
+                <View
+                    android:id="@+id/view12"
+                    android:layout_width="155dp"
+                    android:layout_height="240dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shimmer_view_corners"
+                    app:layout_constraintEnd_toStartOf="@+id/view22"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view22"
+                    android:layout_width="155dp"
+                    android:layout_height="240dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shimmer_view_corners"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/view12"
+                    tools:layout_editor_absoluteY="0dp" />
+
+
+
+                <View
+                    android:id="@+id/tv12"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#dddddd"
+
+                    app:layout_constraintEnd_toStartOf="@+id/tv32"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view12" />
+
+                <View
+                    android:id="@+id/tv22"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#dddddd"
+                    app:layout_constraintEnd_toStartOf="@+id/tv42"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv12" />
+
+                <View
+                    android:id="@+id/tv32"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#dddddd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/tv12"
+                    app:layout_constraintTop_toBottomOf="@id/view12" />
+
+
+                <View
+                    android:id="@+id/tv42"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#dddddd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/tv22"
+                    app:layout_constraintTop_toBottomOf="@id/tv12" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+
+                <View
+                    android:id="@+id/view13"
+                    android:layout_width="155dp"
+                    android:layout_height="240dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shimmer_view_corners"
+                    app:layout_constraintEnd_toStartOf="@+id/view23"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view23"
+                    android:layout_width="155dp"
+                    android:layout_height="240dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shimmer_view_corners"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/view13"
+                    tools:layout_editor_absoluteY="0dp" />
+
+
+
+                <View
+                    android:id="@+id/tv13"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#dddddd"
+
+                    app:layout_constraintEnd_toStartOf="@+id/tv33"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view13" />
+
+                <View
+                    android:id="@+id/tv23"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#dddddd"
+                    app:layout_constraintEnd_toStartOf="@+id/tv43"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv13" />
+
+                <View
+                    android:id="@+id/tv33"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#dddddd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/tv13"
+                    app:layout_constraintTop_toBottomOf="@id/view13" />
+
+
+                <View
+                    android:id="@+id/tv43"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#dddddd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/tv23"
+                    app:layout_constraintTop_toBottomOf="@id/tv13" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <View
+                    android:id="@+id/view14"
+                    android:layout_width="155dp"
+                    android:layout_height="240dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shimmer_view_corners"
+                    app:layout_constraintEnd_toStartOf="@+id/view24"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view24"
+                    android:layout_width="155dp"
+                    android:layout_height="240dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shimmer_view_corners"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/view14"
+                    tools:layout_editor_absoluteY="0dp" />
+
+
+
+                <View
+                    android:id="@+id/tv14"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#dddddd"
+                    app:layout_constraintEnd_toStartOf="@+id/tv34"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view14" />
+
+                <View
+                    android:id="@+id/tv24"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#dddddd"
+                    app:layout_constraintEnd_toStartOf="@+id/tv44"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv14" />
+
+                <View
+                    android:id="@+id/tv34"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#dddddd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/tv14"
+                    app:layout_constraintTop_toBottomOf="@id/view14" />
+
+
+                <View
+                    android:id="@+id/tv44"
+                    android:layout_width="155dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#dddddd"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/tv24"
+                    app:layout_constraintTop_toBottomOf="@id/tv14" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</com.facebook.shimmer.ShimmerFrameLayout>

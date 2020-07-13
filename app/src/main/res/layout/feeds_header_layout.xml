@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/two_side_rounded_background_cc_header"
+    android:padding="@dimen/_20sdp"
+    >
+
+
+    <com.homie.psychq.utils.FeedsViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/feeds_ViewPager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/pageIndicatorView_fpool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:piv_animationType="worm"
+        app:piv_dynamicCount="true"
+        app:piv_interactiveAnimation="true"
+        app:piv_selectedColor="@color/white"
+        app:piv_unselectedColor="@color/greyDark"
+        app:piv_viewPager="@id/factsPool_ViewPager"
+        android:visibility="visible"
+        app:piv_radius="4dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/feeds_ViewPager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingBottom="60dp"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

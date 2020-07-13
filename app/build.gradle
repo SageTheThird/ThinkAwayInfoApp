@@ -1,0 +1,253 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+
+
+
+android {
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+    signingConfigs {
+        release {
+            storeFile file('D:\\AppsStoreKeys\\PsychQ\\psychqV1.jks')
+            storePassword 'Merccury2019'
+            keyAlias = 'uploadV1'
+            keyPassword 'Merccury2019'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+        applicationId "com.homie.psychq"
+        minSdkVersion 22
+        targetSdkVersion 28
+        versionCode 14
+        versionName "3.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    //Testing Dependencies
+    testImplementation 'junit:junit:4.12'
+    /*For testing fragments-to create fragments and change their state. */
+    debugImplementation 'androidx.fragment:fragment-testing:1.2.5'
+
+
+    androidTestImplementation 'androidx.test:rules:1.2.0'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+//    debugImplementation 'androidx.fragment:fragment-testing:1.1.0' //fragment testing
+    testImplementation 'org.mockito:mockito-core:2.19.0'  //Mockito Framework
+    testImplementation 'androidx.test:core:1.2.0'
+    androidTestImplementation 'org.mockito:mockito-android:2.6.3'
+
+
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+
+
+    //Firebase Dependencies
+    implementation 'com.google.firebase:firebase-ads:17.0.0'
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+    implementation 'com.google.firebase:firebase-storage:16.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+    implementation 'com.google.firebase:firebase-core:17.2.0'
+
+
+
+
+    implementation 'com.mikhaellopez:circularimageview:3.2.0'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'com.google.firebase:firebase-messaging:17.3.2'
+
+    //implementation 'com.google.firebase:firebase-ads:17.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+    //implementation 'com.github.mohammadatif:Animatoo:master'
+    implementation 'com.zsoltsafrany:needle:1.0.0'
+    implementation 'com.github.hotchemi:android-rate:1.0.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.blankj:utilcode:1.24.7'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+    implementation 'com.github.iammert:ReadableBottomBar:0.2'
+
+    //unsplash
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    // RxJava
+    def rxjava_version = '2.1.1'
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    // Rx-Retrofit Call Adapter - helps in converting retrofit response to flowable Rxjava
+    def rxcalladapter_version = '2.5.0'
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rxcalladapter_version"
+    // Retrofit call adapter
+
+    // Reactive Streams (convert Observable to LiveData)
+    def reactivestreams_version = "1.1.1"
+    implementation 'androidx.lifecycle:lifecycle-reactivestreams:2.0.0'
+
+    //google auth
+    implementation 'com.google.firebase:firebase-auth:19.1.0'
+    implementation 'com.google.android.gms:play-services-auth:15.0.0'
+    //implementation 'com.firebaseui:firebase-ui-auth:6.0.2'
+
+    def daggerVer = 2.20 // or latest version
+    implementation "com.google.dagger:dagger:$daggerVer"
+    implementation "com.google.dagger:dagger-android-support:$daggerVer"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$daggerVer"
+    annotationProcessor "com.google.dagger:dagger-compiler:$daggerVer"
+
+    // architecture comp. navigation
+    def nav_version = "2.1.0-alpha02"
+    implementation "androidx.navigation:navigation-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-ui:$nav_version"
+    implementation "androidx.navigation:navigation-runtime:$nav_version"
+
+    // ViewModel and LiveData
+    def lifecycle_version = '2.1.0-alpha03'
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+
+    //Lottie Animation Library
+    implementation 'com.airbnb.android:lottie:3.0.7'
+
+
+    //Page Indicator
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3'
+
+    //Epoxy
+    implementation 'com.airbnb.android:epoxy:3.8.0'
+    annotationProcessor 'com.airbnb.android:epoxy-processor:3.8.0'
+    implementation 'com.airbnb.android:epoxy-paging:3.8.0'
+
+
+    def activity_version = "1.0.0"
+    // Java Activity Upgrade
+    //implementation "androidx.activity:activity:$activity_version"
+
+    // okhttp
+    def okHttpVersion = "3.11.0"
+    implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+
+    def room_version = "2.2.0-alpha01" // 2.1.0 for latest stable version
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    implementation 'androidx.room:room-rxjava2:2.1.0-alpha06'
+//    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    //PhotoView For modified ImageView
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+
+    implementation "xyz.schwaab:avvylib:0.0.1"
+
+    //Facebook's shimmer for loading views
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+
+    //Google Preference Library (Settings)
+    def preference_version = "1.1.0"
+    // Java
+    implementation "androidx.preference:preference:$preference_version"
+
+
+
+    //BigImageView dependencies
+    implementation 'com.github.piasy:BigImageViewer:1.6.2'
+    implementation 'com.github.piasy:GlideImageLoader:1.6.2'
+    implementation 'com.github.piasy:GlideImageViewFactory:1.6.2'
+    implementation 'com.github.piasy:ProgressPieIndicator:1.6.2'
+
+
+    implementation 'org.aviran.cookiebar2:cookiebar2:1.0.9'
+
+    implementation 'com.victor:lib:1.0.4'
+
+    //About Section Library
+    implementation 'com.github.jrvansuita:MaterialAbout:0.2.3'
+
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+
+    //File Downloading Library
+    implementation 'com.mindorks.android:prdownloader:0.6.0'
+
+
+    //status bar util
+    implementation 'com.jaeger.statusbarutil:library:1.5.1'
+
+    //Search feature package
+    implementation "com.paulrybitskyi.persistentsearchview:persistentsearchview:1.0.0"
+
+    //MultiLine Collapsing Toolbar
+    implementation 'net.opacapp:multiline-collapsingtoolbar:27.1.1'
+
+
+    //will help in progressBar while loading
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.4.0'
+    //Blur and other transformations using Glide
+    implementation 'jp.wasabeef:glide-transformations:4.1.0'
+
+
+
+    //Click Shrink Effect
+    implementation 'com.github.realpacific:click-shrink-effect:1.0'
+
+    //Subscription related Dependencies
+    implementation 'com.android.billingclient:billing:2.1.0'
+
+
+    // Material Dialog Library
+    implementation 'com.github.Shashank02051997:FancyGifDialog-Android:1.1'
+
+    //GLibrary For Gifs
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
+
+    //Indicator Seekbar for Feeds Fragment
+    implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
+
+
+    //Smart App Rate Library For Getting Feedback From Users
+    implementation 'com.stepstone.apprating:app-rating:2.3.1'
+
+
+    //Different TextView Sizes Handle Through library
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+
+    //Circular imageView For Posts Vector
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'
+
+
+}
+
+com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:id="@+id/fullscreen_relativeLayout"
+    >
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fullscreen_imageView_unsplash"
+        android:scaleType="matrix"
+        android:transitionName="example_transition"
+        />
+
+
+
+<!--    <com.github.piasy.biv.view.BigImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/fullscreen_imageView_unsplash"-->
+<!--        app:failureImage="@drawable/ic_refresh"-->
+<!--        app:failureImageInitScaleType="center"-->
+<!--        app:optimizeDisplay="true"-->
+<!--        app:initScaleType="centerCrop"-->
+<!--        android:transitionName="example_transition"/>-->
+
+    <include
+        android:id="@+id/left_layout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        layout="@layout/bottom_left_photo_fullscreen"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/bottom_right_photo_full_screen"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/left_layout"
+        android:id="@+id/right_layout"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/right_layout"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/down_cardView"
+        android:visibility="gone"
+        >
+
+        <include
+            layout="@layout/photofullscreen_downloading_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/downloading_progress"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:id="@+id/fullscreen_back"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_back"
+        android:background="@drawable/back_button_background"
+        android:layout_marginTop="30dp"/>
+
+    <ProgressBar
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/fullscreen_progressBar"
+        android:visibility="gone"/>
+
+
+    <include
+        layout="@layout/snipppet_center_photofullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+
+
+
+</RelativeLayout>

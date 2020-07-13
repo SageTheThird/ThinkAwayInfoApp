@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/two_side_rounded_background_cc_header"
+    android:padding="8dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:paddingStart="11dp"
+        android:paddingEnd="11dp"
+        android:id="@+id/heading"
+        android:textStyle="bold"
+        android:text="Quote Of The Day"
+        android:fontFamily="@font/trebuc"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="13dp"
+        android:paddingBottom="13dp"
+        android:paddingEnd="13dp"
+        android:gravity="start"
+        android:id="@+id/cc_header_tv"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:fontFamily="@font/trebuc"
+        android:text="Nobody realizes that some people expend tremendous energy merely to be normal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="13dp"
+        android:paddingBottom="13dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="13dp"
+        android:gravity="start"
+        android:id="@+id/note_feeds_header"
+        android:textColor="@color/white"
+        android:textSize="13.5sp"
+        android:fontFamily="@font/trebuc"
+        android:text="@string/content_updates_note"
+        android:visibility="visible"
+        />
+
+</LinearLayout>

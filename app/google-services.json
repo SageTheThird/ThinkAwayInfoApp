@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "493007126633",
+    "firebase_url": "https://psychq-d7ec4.firebaseio.com",
+    "project_id": "psychq-d7ec4",
+    "storage_bucket": "psychq-d7ec4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493007126633:android:448983ea9515b1cb4922f8",
+        "android_client_info": {
+          "package_name": "com.homie.psychq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493007126633-op4m4lifmasi601lu84of0mf9u561hk8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.homie.psychq",
+            "certificate_hash": "ea3d621f0cf1dedb536b01d8ee2235a28984f14f"
+          }
+        },
+        {
+          "client_id": "493007126633-pnk0pf5nsq8qpphu6lia68lsr87g4tha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApUUUX4NE8ZBil9Hh_XHkw-UI0Rs8H9Oc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493007126633-pnk0pf5nsq8qpphu6lia68lsr87g4tha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-4969646247809586~5833246577"
+    }
+  ],
+  "configuration_version": "1"
+}

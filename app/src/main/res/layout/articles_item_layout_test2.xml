@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/article_linear2"
+    app:cardElevation="4dp"
+    android:layout_marginBottom="22dp"
+    >
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:id="@+id/article_thumb"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"
+            />
+
+        <!--        app:siShape="@drawable/article_item_imageview"-->
+
+
+
+        <!--        <include-->
+        <!--            layout="@layout/articles_item_layout"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_weight="5"-->
+        <!--            />-->
+
+
+
+        <TextView
+            android:id="@+id/article_number_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/two_side_rounded_button_article_numbering"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/SubtleBlack"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/article_thumb"
+            app:layout_constraintBottom_toBottomOf="@id/article_thumb"
+            android:fontFamily="@font/trebuc"
+            />
+
+
+        <TextView
+            android:id="@+id/article_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="2dp"
+            android:text="Types Of behaviours By Elinioya Now it "
+            android:textColor="@color/SubtleBlack"
+            android:textSize="23sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/trebuc"
+            app:layout_constraintTop_toBottomOf="@+id/article_thumb"
+            android:layout_marginTop="@dimen/_4sdp"/>
+
+
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_pin_final2"
+            android:id="@+id/pin_iv"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:clipToPadding="false"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_new_tag"
+            android:id="@+id/fresh_stamp_iv_article"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>

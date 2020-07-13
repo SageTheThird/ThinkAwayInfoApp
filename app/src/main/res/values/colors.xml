@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F2B2B</color>
+    <color name="colorPrimaryDark">#242525</color>
+    <color name="colorAccent">#242525</color>
+    <color name="white">#FFF</color>
+    <color name="light_primary">#377474</color>
+    <color name="black">#000</color>
+    <color name="transparentBlack">#0D000000</color>
+    <color name="transparentBlackPager">#4D000000</color>
+    <color name="transparentBlackDark">#D3000000</color>
+
+    <!--ViewPagerIndicator Colors-->
+    <color name="greyLight">#535252</color>
+    <color name="greyDark">#B3ADAD</color>
+    <color name="SubtleBlack">#242525</color>
+    <color name="resume_refresh">#fd9600</color>
+    <color name="fav_pressed_color">#FFB300</color>
+
+
+    <!--For Random Color Picker-->
+    <color name="Quotes">#111215</color>
+    <color name="PsychologicalTricks">#ba2b2b</color>
+    <color name="PsychologicalDisorders">#FC7070</color>
+    <color name="Psychology">#58201C</color>
+    <color name="Phobias">#3E423E</color>
+    <color name="Philosophy">#591426</color>
+    <color name="Pessimism">#484e4c</color>
+    <color name="PersonalityTypes">#fda625</color>
+    <color name="MoviesFacts">#142f45</color>
+    <color name="Movies">#1D356B</color>
+    <color name="Literature">#cc4643</color>
+    <color name="LifePointers">#8c5735</color>
+    <color name="InterestingWords">#464150</color>
+    <color name="Idioms">#536C91</color>
+    <color name="HumanBehavior">#343434</color>
+    <color name="Grammar">#353c40</color>
+    <color name="Facts">#233535</color>
+    <color name="Emotions">#806767</color>
+    <color name="CriticalThinking">#854e4b</color>
+    <color name="ColorPsychology">#501931</color>
+    <color name="BooksReferences">#afc437</color>
+    <color name="Default">#2f2e34</color>
+
+
+    <color name="c1">#f78749</color>
+    <color name="c2">#4abcd9</color>
+    <color name="c3">#496075</color>
+    <color name="c4">#c48d81</color>
+    <color name="c5">#8c76a5</color>
+    <color name="c6">#ec7e74</color>
+    <color name="c7">#e1b975</color>
+    <color name="c8">#9b8271</color>
+    <color name="c9">#b7556b</color>
+    <color name="c10">#4d4e63</color>
+    <color name="c11">#93b9b4</color>
+    <color name="c12">#68564d</color>
+    <color name="c13">#caa75b</color>
+    <color name="c14">#8da8ba</color>
+    <color name="c15">#eed8fe</color>
+    <color name="c16">#ff8fad</color>
+    <color name="c17">#9e45af</color>
+    <color name="c18">#4c5f87</color>
+    <color name="c19">#854e4b</color>
+    <color name="c20">#4d1650</color>
+    <color name="c21">#6caede</color>
+    <color name="c22">#2f2e34</color>
+
+    <!--<color name="colorPrimary">#388A8A</color>
+    <color name="colorPrimaryDark">#388A8A</color>
+    <color name="colorAccent">#388A8A</color>
+    <color name="white">#FFF</color>
+    <color name="light_primary">#339797</color>
+    <color name="black">#000</color>
+    <color name="transparentBlack">#0D000000</color>-->
+</resources>

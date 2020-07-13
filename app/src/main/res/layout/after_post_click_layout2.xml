@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    >
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/postAfterClickViewPager"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentBlackDark"
+        android:id="@+id/pagerCoverView"
+        android:visibility="gone"
+        />
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        app:layout_anchor="@id/postAfterClickViewPager"
+        app:layout_anchorGravity="center_vertical|end"
+        android:background="@drawable/forward_nextpage_background"
+        android:src="@drawable/ic_catopen"
+        android:id="@+id/forwardBtn"
+        android:visibility="gone"
+        android:paddingStart="10dp"
+        />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postNestedScrool"
+        android:background="@drawable/bottomsheet_post_click_background"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="120dp"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+
+            >
+
+
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/white"
+                android:layout_marginEnd="130dp"
+                android:layout_marginStart="130dp"
+                android:id="@+id/swipeUpView1"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/white"
+                android:layout_marginEnd="140dp"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/swipeUpView2"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/white"
+                android:layout_marginEnd="150dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/swipeUpView3"
+
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shimmerPostClickRelativeLayout"
+                >
+
+                <include
+                    layout="@layout/shimmer_post_afterclick"
+
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/title_tv_af"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/trebuc"
+                android:textSize="28sp"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@id/views_tv_af"
+
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/white"
+                android:id="@+id/description_tv_af"
+                android:fontFamily="@font/trebuc"
+                android:visibility="visible"
+                android:textSize="18sp"
+                android:textIsSelectable="true"
+                app:layout_constraintTop_toBottomOf="@id/title_tv_af"/>
+
+
+
+            <!--Here we would fit the related tags Rv -->
+            <!--Also make redesign the buttons -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/white"
+                android:id="@+id/tagsWrap1"
+                android:layout_marginTop="10dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:id="@+id/after_click_more_items_rv"
+                android:overScrollMode="never"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                >
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/white"
+                android:id="@+id/tagsWrap2"
+                />
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relative"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/description_tv_af"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Download"
+                    android:layout_marginTop="13dp"
+                    android:textAllCaps="false"
+                    android:textSize="13sp"
+                    android:background="@drawable/button_corners"
+                    android:textColor="#fff"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:visibility="gone"
+
+                    android:id="@+id/download_btn_af"
+
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/down_cardView"
+                    android:visibility="gone"
+                    >
+
+                    <include
+                        layout="@layout/photofullscreen_downloading_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/downloading_progress"
+
+                        />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Bookmark"
+                android:layout_marginTop="6dp"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                android:background="@drawable/button_corners"
+                android:textColor="#fff"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/relative"
+                android:id="@+id/saveToFavouriteBtn_af"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+
+
+
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Set As Wallpaper"
+                android:layout_marginTop="6dp"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                android:background="@drawable/button_corners"
+                android:textColor="#fff"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="gone"
+
+                android:id="@+id/set_as_wallpaper_btn_af"
+                app:layout_constraintTop_toBottomOf="@id/saveToFavouriteBtn_af"
+                app:layout_constraintStart_toStartOf="parent"
+
+
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Go To Category"
+                android:layout_marginTop="6dp"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                android:background="@drawable/button_corners"
+                android:textColor="#fff"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="gone"
+
+                android:id="@+id/goToCategory_btn_af"
+                app:layout_constraintTop_toBottomOf="@id/set_as_wallpaper_btn_af"
+                app:layout_constraintStart_toStartOf="parent"
+
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Print it on a T shirt "
+                android:layout_marginTop="6dp"
+                android:textAllCaps="false"
+                android:textSize="13sp"
+                android:background="@drawable/button_corners"
+                android:textColor="#fff"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="gone"
+                android:id="@+id/printItoNShirt_tv_af"
+                app:layout_constraintTop_toBottomOf="@id/goToCategory_btn_af"
+                app:layout_constraintStart_toStartOf="parent"
+
+
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@id/printItoNShirt_tv_af"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Share"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"
+                    android:textSize="13sp"
+                    android:background="@drawable/button_corners"
+                    android:textColor="#fff"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:visibility="gone"
+
+                    android:id="@+id/share_tv_id"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/rotateloading"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:visibility="invisible"
+                    android:layout_toRightOf="@+id/share_tv_id"
+                    android:layout_marginStart="20dp"
+                    android:indeterminateTint="@color/SubtleBlack"
+                    android:layout_marginTop="14dp"
+
+                    />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/progressBar2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="110dp"-->
+    <!--        android:layout_marginEnd="110dp"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginBottom="15dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        style="?android:attr/progressBarStyleHorizontal"-->
+    <!--        android:max="100"-->
+    <!--        android:progress="20"-->
+    <!--        android:visibility="gone"-->
+    <!--        android:indeterminate="false"-->
+    <!--        />-->
+
+
+
+    <!--    style="@style/NumberProgressBar_Warning_Red"-->
+
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

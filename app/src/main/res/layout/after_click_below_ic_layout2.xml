@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shimmer_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <include
+            layout="@layout/shimmer_post_afterclick"
+            />
+
+
+    </RelativeLayout>
+
+
+    <!--Temp Layout For Patching Up Titles Of Posts-->
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/SubtleBlack"
+        android:id="@+id/views_tv_af"
+        android:fontFamily="@font/trebuc"
+        android:visibility="gone"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/note_"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/title_tv_af"
+        android:layout_height="wrap_content"
+        android:textColor="@color/SubtleBlack"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/trebuc"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/views_tv_af"
+
+
+        />
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/tags_tv_af"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/spots_dialog_color"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/title_tv_af"-->
+<!--        android:fontFamily="@font/armata"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:visibility="gone"-->
+<!--        android:textSize="13sp"-->
+<!--        />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textColor="#000"
+        android:id="@+id/description_tv_af"
+        android:fontFamily="@font/trebuc"
+        android:visibility="gone"
+        android:textSize="15sp"
+        android:textIsSelectable="true"
+        app:layout_constraintTop_toBottomOf="@id/title_tv_af"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description_tv_af"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Download"
+            android:layout_marginTop="13dp"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            android:background="@drawable/button_corners"
+            android:textColor="#fff"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:id="@+id/download_btn_af"
+
+
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/down_cardView"
+            android:visibility="gone"
+            >
+
+            <include
+                layout="@layout/photofullscreen_downloading_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/downloading_progress"
+
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Save to favourites"
+        android:layout_marginTop="6dp"
+        android:textAllCaps="false"
+        android:textSize="13sp"
+        android:background="@drawable/button_corners"
+        android:textColor="#fff"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/relative"
+        android:id="@+id/saveToFavouriteBtn_af"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Set as wallpaper"
+        android:layout_marginTop="6dp"
+        android:textAllCaps="false"
+        android:textSize="13sp"
+        android:background="@drawable/button_corners"
+        android:textColor="#fff"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/set_as_wallpaper_btn_af"
+        app:layout_constraintTop_toBottomOf="@id/saveToFavouriteBtn_af"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Go to category"
+        android:layout_marginTop="6dp"
+        android:textAllCaps="false"
+        android:textSize="13sp"
+        android:background="@drawable/button_corners"
+        android:textColor="#fff"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/goToCategory_btn_af"
+        app:layout_constraintTop_toBottomOf="@id/set_as_wallpaper_btn_af"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Print it on a T shirt "
+        android:layout_marginTop="6dp"
+        android:textAllCaps="false"
+        android:textSize="13sp"
+        android:background="@drawable/button_corners"
+        android:textColor="#fff"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="gone"
+        android:id="@+id/printItoNShirt_tv_af"
+        app:layout_constraintTop_toBottomOf="@id/goToCategory_btn_af"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/printItoNShirt_tv_af"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Share"
+            android:layout_marginTop="6dp"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            android:background="@drawable/button_corners"
+            android:textColor="#fff"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:id="@+id/share_tv_id"
+            />
+
+        <ProgressBar
+            android:id="@+id/rotateloading"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:visibility="invisible"
+            android:layout_toRightOf="@+id/share_tv_id"
+            android:layout_marginStart="20dp"
+            android:indeterminateTint="@color/SubtleBlack"
+            android:layout_marginTop="14dp"
+
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    android:layout_marginTop="50dp"
+    >
+
+    <com.homie.psychq.utils.TypeWriter
+        android:id="@+id/loadingTv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="visible"
+
+        android:layout_marginEnd="80dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/trebuc"
+        android:text="Why Do We Do The Things We Do Why Do We Do The Things We DoWhy Do We Do The Things We Do 100dp"
+        android:textColor="@color/SubtleBlack"
+        android:layout_toEndOf="@id/rotateloading"
+        android:layout_marginStart="10dp"
+
+        />
+
+
+    <com.victor.loading.rotate.RotateLoading
+        android:id="@+id/rotateloading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:loading_width="5dp"
+        app:loading_color="@color/SubtleBlack"
+        />
+
+</RelativeLayout>

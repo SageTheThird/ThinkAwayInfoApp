@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="10dp"
+    >
+
+<!--    <ImageView-->
+<!--        android:id="@+id/insta_iv"-->
+<!--        android:layout_width="25dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:layout_below="@id/total_collections_tv"-->
+<!--        android:background="@drawable/instagram"-->
+<!--        android:scaleType="centerCrop"-->
+
+<!--        />-->
+<!--    <ImageView-->
+<!--        android:id="@+id/twitter_iv"-->
+<!--        android:layout_width="25dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:background="@drawable/twitter"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:scaleType="centerCrop"-->
+
+<!--        />-->
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_unsplash_test"
+        android:scaleType="fitXY"
+        android:id="@+id/unsplash_btn"
+
+        />
+
+</LinearLayout>

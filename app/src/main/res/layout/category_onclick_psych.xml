@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <include
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/shimmer_catonclick_layout"
+        android:layout_marginTop="80dp"
+        android:visibility="visible"/>
+
+
+    <com.airbnb.epoxy.EpoxyRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/onClick_category_epoxyrv"
+
+        />
+
+
+
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:id="@+id/app_bar_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/white"-->
+<!--        android:visibility="visible">-->
+
+<!--    <com.google.android.material.appbar.CollapsingToolbarLayout-->
+<!--        android:id="@+id/collapsingToolbar_featured"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:contentScrim="?attr/colorPrimary"-->
+<!--        app:expandedTitleMarginEnd="70dp"-->
+<!--        app:expandedTitleMarginStart="50dp"-->
+<!--        app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"-->
+<!--        >-->
+
+
+
+<!--      -->
+
+
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            app:layout_collapseMode="pin"-->
+<!--            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"-->
+
+<!--            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">-->
+
+<!--        </androidx.appcompat.widget.Toolbar>-->
+
+
+<!--    </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+
+
+
+
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+
+<!--        >-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+
+<!--            >-->
+
+
+
+<!--      -->
+<!--        </LinearLayout>-->
+
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+
+
+
+
+
+</LinearLayout>

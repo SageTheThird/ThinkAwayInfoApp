@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginBottom="-50dp"
+    android:padding="7dp"
+    android:background="@drawable/post_background_feeds"
+    android:id="@+id/rootConstraintLayout"
+
+    >
+    <!--390dp height if cat not -->
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="13dp"
+        android:id="@+id/crdview"
+        app:cardElevation="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <ImageView
+                android:id="@+id/psych_featured_thumb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:transitionName="example_transition2"
+                />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_futurama_bender"
+                app:civ_border_color="@color/resume_refresh"
+                android:id="@+id/circularIv"
+                app:civ_border_width="5dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="2dp"
+                app:civ_shadow_color="#3f51b5"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/psych_feautred_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Psychological Disorders"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                app:layout_constraintStart_toEndOf="@+id/circularIv"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/trebuc"
+
+
+                />
+
+            <TextView
+                android:id="@+id/psych_feautred_timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="2 days ago"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:fontFamily="@font/trebuc"
+                app:layout_constraintStart_toEndOf="@id/circularIv"
+                app:layout_constraintTop_toBottomOf="@id/psych_feautred_category"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/backgroundTitleIv"
+                android:visibility="gone"
+                android:background="@color/transparentBlackPager"
+                />
+
+            <TextView
+                android:id="@+id/psych_feautred_item_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="How To Respond Versus How to Party"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold"
+
+                android:padding="11dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/title_unread_background_feeds2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:fontFamily="@font/trebuc"
+                />
+
+            <ProgressBar
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:layout_constraintStart_toStartOf="@id/psych_featured_thumb"
+                app:layout_constraintEnd_toEndOf="@id/psych_featured_thumb"
+                app:layout_constraintTop_toTopOf="@id/psych_featured_thumb"
+                app:layout_constraintBottom_toBottomOf="@id/psych_featured_thumb"                android:id="@+id/progress_bar_featured"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_new_tag"
+                android:id="@+id/fresh_stamp_iv"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

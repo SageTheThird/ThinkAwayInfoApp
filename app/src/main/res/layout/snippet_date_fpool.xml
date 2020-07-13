@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/SubtleBlack"
+    >
+
+
+
+    <Spinner
+        android:id="@+id/month_spinner"
+        android:layout_width="165dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/monthSpinner_tv"/>
+
+    <TextView
+        android:id="@+id/monthSpinner_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MONTH"
+        android:fontFamily="@font/couture"
+
+        android:textColor="@color/white"
+        android:textSize="23sp" />
+
+    <Spinner
+        android:id="@+id/day_spinner"
+        android:layout_width="165dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/daySpinnerTv"/>
+
+
+
+    <TextView
+        android:id="@+id/daySpinnerTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAY"
+        android:textColor="@color/white"
+        android:fontFamily="@font/couture"
+
+        android:layout_below="@id/month_spinner"
+        android:textSize="23sp" />
+
+</RelativeLayout>

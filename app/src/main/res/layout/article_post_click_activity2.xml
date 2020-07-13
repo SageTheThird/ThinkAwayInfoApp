@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinator_postAfter"
+    >
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+
+        <net.opacapp.multilinecollapsingtoolbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimaryDark"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            android:fitsSystemWindows="true"
+            android:id="@+id/collapsingToolbar"
+            app:maxLines="5"
+            >
+
+
+
+            <ImageView
+                app:layout_collapseMode="parallax"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:id="@+id/toolarBar_iv"/>
+
+            <TextView
+                android:id="@+id/article_number_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/two_side_rounded_button_article_numbering"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/SubtleBlack"
+                android:textSize="40sp"
+                android:fontFamily="@font/trebuc"
+                />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:title="Here Goes The Title of Article"
+                app:titleTextColor="@color/white"
+                app:layout_collapseMode="pin"
+                />
+
+
+        </net.opacapp.multilinecollapsingtoolbar.CollapsingToolbarLayout>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:id="@+id/nestedScroll_articlePost"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginBottom="16dp"
+            android:padding="10dp"
+            >
+
+
+            <include
+                layout="@layout/shimmer_article_post_layout"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/middle_layout_post_article"
+
+                >
+
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_centerHorizontal="true"
+                    layout="@layout/snippet_article_middle_layout"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <TextView
+                android:textSize="31sp"
+                android:lineSpacingMultiplier="0.80"
+                android:id="@+id/about"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/trebuc"
+
+                android:textColor="@color/SubtleBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABOUT TOPIC"
+                android:textIsSelectable="true"
+                android:layout_gravity="start"
+                android:visibility="gone"
+                android:paddingStart="12dp"
+                android:textStyle="bold"
+
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/SubtleBlack"
+                android:id="@+id/esttime_tv"
+                android:paddingStart="14dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/trebuc"
+
+
+                />
+
+
+            <TextView
+                android:paddingStart="12dp"
+                android:paddingBottom="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="20sp"
+                android:lineSpacingMultiplier="0.90"
+                android:id="@+id/description_tv_articles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:visibility="gone"
+                android:gravity="start"
+                android:fontFamily="@font/trebuc"
+
+                />
+
+
+
+            <TextView
+                android:textSize="31sp"
+                android:lineSpacingMultiplier="0.80"
+                android:id="@+id/content"
+
+                android:textColor="@color/SubtleBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAIN POINTS"
+                android:textIsSelectable="true"
+                android:layout_gravity="start"
+                android:visibility="gone"
+                android:paddingStart="12dp"
+                android:fontFamily="@font/trebuc"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                />
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingStart="12dp"
+                    android:textSize="20sp"
+                    android:lineSpacingMultiplier="0.90"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/content_tv_article"
+                    app:layout_constraintTop_toBottomOf="@+id/content_tv_article2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:visibility="gone"
+                    android:textIsSelectable="true"
+                    android:gravity="start"
+                    android:maxLines="1000"
+                    android:fontFamily="@font/trebuc"
+
+                    />
+
+                <TextView
+                    android:paddingEnd="12dp"
+                    android:paddingStart="12dp"
+                    android:textSize="20sp"
+                    android:lineSpacingMultiplier="0.90"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/content_tv_article2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="gone"
+                    android:textIsSelectable="true"
+                    android:gravity="start"
+                    android:fontFamily="@font/trebuc"
+
+                    android:maxLines="1000"
+                    />
+
+
+                <!--                    android:fontFamily="@font/armata"-->
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="290dp"
+                    android:background="@drawable/backward_article_button_background"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:id="@+id/prev_page_article"
+                    app:layout_anchor="@id/content_tv_article"
+                    android:src="@drawable/ic_backward"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/content_tv_article"
+                    />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="290dp"
+                    android:background="@drawable/forward_article_button_background"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:id="@+id/next_page_article"
+                    android:src="@drawable/ic_forward"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/content_tv_article"
+
+
+                    />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:textSize="12sp"
+                    android:lineSpacingMultiplier="0.80"
+                    android:id="@+id/note_articles"
+                    android:textColor="@color/SubtleBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dictionaryNote"
+                    android:textIsSelectable="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:fontFamily="@font/trebuc"
+
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/trebuc"
+
+                    android:layout_below="@id/note_articles"
+                    android:textColor="@color/SubtleBlack"
+                    android:id="@+id/source_tv"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/SubtleBlack"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/published_tv"
+                    android:fontFamily="@font/trebuc"
+
+                    android:layout_below="@id/source_tv"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/app_bar_layout"
+        app:layout_anchorGravity="bottom|center"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:src="@drawable/ic_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:elevation="1dp"
+            app:pressedTranslationZ="12dp"
+            app:layout_anchor="@id/app_bar_layout"
+            android:id="@+id/pin_article"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:src="@drawable/ic_saves_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fff"
+            app:elevation="1dp"
+            app:pressedTranslationZ="12dp"
+            app:layout_anchor="@id/app_bar_layout"
+            android:id="@+id/add_to_fav"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:src="@drawable/ic_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:elevation="1dp"
+            app:pressedTranslationZ="12dp"
+            app:layout_anchor="@id/app_bar_layout"
+            android:id="@+id/share_article"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

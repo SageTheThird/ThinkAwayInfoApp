@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/right_bottom_rel"
+        android:layout_width="235dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/info_expandable_layout"
+        android:background="@drawable/one_side_rounded_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--Bottom Right SIde MEnu-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:weightSum="120">
+
+            <Button
+                android:id="@+id/info_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="30"
+                android:background="@drawable/ic_info" />
+
+            <Button
+                android:id="@+id/download_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="30"
+                android:background="@drawable/ic_download"
+
+                />
+
+            <Button
+                android:id="@+id/set_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="30"
+                android:background="@drawable/ic_set"
+
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/info_expandable_layout"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        app:el_duration="500"
+        app:el_expanded="false"
+        app:layout_constraintTop_toBottomOf="@id/right_bottom_rel"
+        android:background="@drawable/bottom_corners_rounded_button"
+        app:el_parallax="0.5"
+        tools:ignore="MissingConstraints"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="12dp">
+
+
+
+
+            <TextView
+                android:id="@+id/tags_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="#colors #camera #sun #moon"
+                android:textColor="@color/spots_dialog_color"
+                android:textSize="11sp"
+                />
+
+            <TextView
+                android:id="@+id/description_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tags_tv"
+                android:layout_marginTop="7dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:fontFamily="@font/allerta"
+                android:text="Some description of the photo"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/SubtleBlack" />
+
+           <include
+               android:id="@+id/stats"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/description_tv"
+               android:layout_marginTop="8dp"
+               layout="@layout/photo_fullscreen_bottom_right_snippet"/>
+
+
+        </RelativeLayout>
+
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:id="@+id/vector_intro"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/title_intoTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:scaleType="fitCenter"
+        android:text="@string/titlePageThree"
+        android:gravity="center"
+        android:textSize="@dimen/_21sdp"
+        android:paddingBottom="5dp"
+        android:fontFamily="@font/trebuc"
+        android:textColor="#E9E8E8"
+        app:layout_constraintTop_toBottomOf="@id/vector_intro"
+        />
+
+    <TextView
+        android:id="@+id/description_introTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="130dp"
+        android:gravity="center"
+        android:paddingStart="17dp"
+        android:paddingEnd="17dp"
+        android:paddingBottom="17dp"
+        android:scaleType="fitCenter"
+        android:text="@string/pageThreeText"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#C3E2E2E2"
+        android:fontFamily="@font/trebuc"
+
+        app:layout_constraintTop_toBottomOf="@id/title_intoTv"
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

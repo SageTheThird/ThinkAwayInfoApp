@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/horizantal_cardview_id"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:clickable="true"
+    cardview:cardCornerRadius="4dp"
+    cardview:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="6dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Color Psycology"
+            android:textSize="14sp"
+            android:fontFamily="@font/allerta"
+            android:id="@+id/tag_item_tv"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

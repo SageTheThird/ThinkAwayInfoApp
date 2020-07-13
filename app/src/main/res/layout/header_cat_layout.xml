@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="50dp"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Random Category 0"
+            android:id="@+id/onclick_category_title_tv"
+            android:textSize="22sp"
+            android:fontFamily="@font/trebuc"
+            android:textColor="@color/SubtleBlack"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2340 Posts"
+            android:layout_marginTop="3dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/trebuc"
+            android:textColor="@color/SubtleBlack"
+            android:id="@+id/onclick_category_post_count"
+            android:layout_below="@id/onclick_category_title_tv"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/trebuc"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="8dp"
+            android:gravity="start"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/about"
+            android:text="About"
+            android:layout_below="@id/onclick_category_post_count"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_article_description"
+            android:textSize="16sp"
+            android:fontFamily="@font/trebuc"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:id="@+id/categoryDescription"
+            android:gravity="start"
+            android:layout_below="@id/about"
+            />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

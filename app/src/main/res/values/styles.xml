@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+
+        <!--Attributes for cookie customization-->
+        <item name="cookieTitleColor">@color/default_title_color</item>
+        <item name="cookieMessageColor">@color/default_message_color</item>
+        <item name="cookieActionColor">#03A9F4</item>
+        <item name="cookieBackgroundColor">@color/SubtleBlack</item>
+
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+
+        <!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="material_dialog_background">#FFFFFF</item>-->
+<!--        <item name="material_dialog_title_text_color">#000000</item>-->
+<!--        <item name="material_dialog_message_text_color">#5F5F5F</item>-->
+<!--        <item name="material_dialog_positive_button_color">@color/colorAccent</item>-->
+<!--        <item name="material_dialog_positive_button_text_color">#FFFFFF</item>-->
+<!--        <item name="material_dialog_negative_button_text_color">@color/colorAccent</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#FFAB00</item>
+    </style>
+
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#FFF</item>
+        <item name="colorControlActivated">#FF0000</item>
+        <item name="colorControlHighlight">#2196F3</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="cutomFloat">
+        <item name="android:textColor">@color/SubtleBlack</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@drawable/four_side_rounded_floating_button_text_bg</item>
+    </style>
+
+    <style name="MyDialogFadeAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+
+
+
+
+</resources>

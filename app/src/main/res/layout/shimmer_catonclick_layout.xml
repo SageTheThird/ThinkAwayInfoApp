@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/shimmer_view_container"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <View
+                android:id="@+id/viewtext101"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:background="#dddddd"
+                android:layout_gravity="center"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                app:layout_constraintEnd_toStartOf="@+id/view2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <View
+                android:id="@+id/viewtext102"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:background="#dddddd"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                app:layout_constraintEnd_toStartOf="@+id/view2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <View
+                android:id="@+id/viewtext103"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:adjustViewBounds="true"
+                android:background="#dddddd"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                app:layout_constraintEnd_toStartOf="@+id/view2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <View
+                android:id="@+id/viewtext104"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:background="#dddddd"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                app:layout_constraintEnd_toStartOf="@+id/view2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <View
+                android:id="@+id/viewtext105"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:background="#dddddd"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                app:layout_constraintEnd_toStartOf="@+id/view2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <View
+                android:id="@+id/viewtext106"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="#dddddd"
+                app:layout_constraintEnd_toStartOf="@+id/view2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <View
+                android:id="@+id/viewtext"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="#dddddd"
+                app:layout_constraintEnd_toStartOf="@+id/view2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:adjustViewBounds="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/shimmer_view_corners"
+                />
+
+
+            <View
+                android:id="@+id/view12"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:adjustViewBounds="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/shimmer_view_corners"
+                />
+
+            <View
+                android:id="@+id/view13"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:adjustViewBounds="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/shimmer_view_corners"
+                />
+
+
+            <View
+                android:id="@+id/view14"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/shimmer_view_corners"
+                android:layout_margin="10dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</com.facebook.shimmer.ShimmerFrameLayout>

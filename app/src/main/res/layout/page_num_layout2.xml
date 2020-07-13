@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@null"
+    android:orientation="horizontal"
+    android:layout_marginBottom="-25dp"
+    android:layout_marginTop="-25dp"
+
+
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/pg_num_background"
+        android:fontFamily="@font/allerta"
+        android:textStyle="bold"
+        android:text="PG"
+        android:padding="12dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="55sp"
+        android:elevation="12dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:elevation="6dp"
+        android:text="15"
+        android:textSize="55sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/allerta"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/pagenumber"
+        android:background="@drawable/pg_num_background2"
+        />
+
+</LinearLayout>

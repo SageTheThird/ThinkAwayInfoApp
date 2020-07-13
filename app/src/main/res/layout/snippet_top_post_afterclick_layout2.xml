@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="680dp">
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/main_iV_afterClick"
+        app:layout_constraintEnd_toEndOf="@+id/main_iV_afterClick"
+        app:layout_constraintStart_toStartOf="@+id/main_iV_afterClick"
+        app:layout_constraintTop_toTopOf="@+id/main_iV_afterClick"
+        app:lottie_autoPlay="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="110dp"
+        app:lottie_repeatCount="20" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="20"
+        android:visibility="gone"
+        android:indeterminate="false"
+        />
+
+
+
+<!--    style="@style/NumberProgressBar_Warning_Red"-->
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:id="@+id/main_iV_afterClick"
+        android:scaleType="matrix"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/four_side_rounded_button_articles_seemore"
+        android:text="RETRY"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:id="@+id/retryBtn"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/main_iV_afterClick"
+        app:layout_constraintEnd_toEndOf="@+id/main_iV_afterClick"
+        app:layout_constraintStart_toStartOf="@+id/main_iV_afterClick"
+        app:layout_constraintTop_toTopOf="@+id/main_iV_afterClick" />
+
+
+    <!--    <com.github.piasy.biv.view.BigImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="680dp"-->
+<!--        android:id="@+id/main_iV_afterClick"-->
+<!--        app:failureImage="@drawable/ic_refresh"-->
+<!--        app:failureImageInitScaleType="center"-->
+<!--        app:optimizeDisplay="false"-->
+<!--        app:initScaleType="centerCrop"-->
+<!--        app:tapToRetry="true"-->
+<!--        android:transitionName="example_transition"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--    </com.github.piasy.biv.view.BigImageView>-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="6dp"
+    android:layout_marginStart="7dp"
+    android:layout_marginEnd="7dp"
+    app:cardCornerRadius="7dp"
+    android:layout_marginBottom="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fireplace"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerta"
+            android:text="@string/subscribeBanner"
+            android:textSize="16.5sp"
+            android:textColor="@color/SubtleBlack"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:gravity="start"
+            android:lineSpacingMultiplier="0.82"
+            />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/subsciption_btn_background"
+            android:textColor="@color/white"
+            android:text="SUBSCRIBE"
+            android:textSize="14sp"
+            android:id="@+id/subscribe_holder"
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="220dp"
+  >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView_un"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="20"
+        android:indeterminate="false"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignBottom="@id/lottieAnimationView_un"
+        android:layout_marginEnd="120dp"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/four_side_rounded_button_articles_seemore"
+        android:text="RETRY"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:id="@+id/retryBtn"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+
+
+
+</RelativeLayout>

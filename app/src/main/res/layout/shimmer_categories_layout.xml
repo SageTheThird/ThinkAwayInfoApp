@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/shimmer_categoires_frameLayout"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            >
+
+            <!--Right Image-->
+
+            <View
+                android:id="@+id/view11"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shimmer_view_corners"/>
+
+
+            <!--Left Image-->
+
+            <View
+                android:id="@+id/view12"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/shimmer_view_corners"
+                />
+
+
+
+
+            <View
+                android:id="@+id/view13"
+                android:layout_width="180dp"
+                android:layout_height="270dp"
+                android:adjustViewBounds="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shimmer_view_corners"/>
+
+
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/view13"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:id="@+id/title_cat_psych"
+                android:layout_centerHorizontal="true"
+                android:background="#dddddd"
+
+                />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/title_cat_psych"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:id="@+id/count"
+                android:background="#dddddd"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/count"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:id="@+id/description"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="#dddddd"
+
+                />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/description"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:id="@+id/description2"
+                android:background="#dddddd"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/description2"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:id="@+id/description3"
+                android:background="#dddddd"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/description3"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:id="@+id/description4"
+                android:background="#dddddd"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            >
+
+            <!--Right Image-->
+
+            <View
+                android:id="@+id/view21"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shimmer_view_corners"/>
+
+
+            <!--Left Image-->
+
+            <View
+                android:id="@+id/view22"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/shimmer_view_corners"
+                />
+
+
+
+
+            <View
+                android:id="@+id/view23"
+                android:layout_width="180dp"
+                android:layout_height="270dp"
+                android:adjustViewBounds="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shimmer_view_corners"/>
+
+
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/view23"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:id="@+id/title_cat_psych2"
+                android:layout_centerHorizontal="true"
+                android:background="#dddddd"
+
+                />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/title_cat_psych2"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:id="@+id/count2"
+                android:background="#dddddd"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/count2"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:id="@+id/description25"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="#dddddd"
+
+                />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/description25"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:id="@+id/description22"
+                android:background="#dddddd"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/description22"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:id="@+id/description32"
+                android:background="#dddddd"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/description32"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:id="@+id/description42"
+                android:background="#dddddd"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</com.facebook.shimmer.ShimmerFrameLayout>

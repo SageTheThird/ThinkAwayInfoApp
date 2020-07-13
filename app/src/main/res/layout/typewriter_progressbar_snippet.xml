@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="20dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:visibility="visible"
+        android:indeterminate="true"
+        />
+    <com.homie.psychq.utils.TypeWriter
+        android:id="@+id/loadingTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:textSize="17sp"
+        android:fontFamily="@font/trebuc"
+        android:text="Why Do WE Do THe Things We Do"
+        android:textColor="@color/SubtleBlack"
+
+        />
+
+
+
+
+</LinearLayout>

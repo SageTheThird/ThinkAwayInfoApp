@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Enter the new title here"
+        android:id="@+id/titlePatchEt"
+        android:textColor="@color/SubtleBlack"
+        android:fontFamily="@font/allerta"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/subsciption_btn_background"
+        android:text="UPdate TITLe"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="13dp"
+        android:id="@+id/updateTitleBtn"
+        />
+
+</LinearLayout>
