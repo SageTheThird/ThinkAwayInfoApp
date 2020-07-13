@@ -130,6 +130,19 @@
 
     <!---Important Strings-->
     <!--Server + Data Access-->
+    <string name="server_location"></string>
+    <string name="server_creds"></string>
+
+    <!--Google Api Creds-->
+    <string name="CONSTANT_URL_ACCESS_TOKEN"></string>
+    <string name="CONSTANT_URL_DEVELOPER_API"></string>
+    <string name="CLIENT_ID"></string>
+    <string name="CLIENT_SECRET"></string>
+    <string name="GRANT_TYPE_ACCESS_TOKEN"></string>
+    <string name="REFRESH_TOKEN"></string>
+
+    <!--Facts Pool-->
+    <string name="FactsPoolMainAddress"></string>
 
 
 </resources>
