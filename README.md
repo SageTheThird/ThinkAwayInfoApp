@@ -14,6 +14,3 @@ An information app built with Dagger 2, Room, Rx Android with a private virtual 
 
 <img src="https://raw.githubusercontent.com/Kurtz0420/HeadlinesHay/master/imgs/others/thinkaway/5.jpg?raw=true" />
 
-
-
-<img src="https://raw.githubusercontent.com/Kurtz0420/HeadlinesHay/master/imgs/others/thinkaway/6.jpg?raw=true" />
